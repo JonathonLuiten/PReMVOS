@@ -7,13 +7,13 @@
 PReMVOS is a video object segmentation method that won both the CVPR DAVIS challenge on video object segmentation, and the ECCV 1st Large-scale video object segmentation challenge on the YouTube-VOS dataset.
 
 The arxiv version of PReMVOS paper (accepted at ACCV 2018) can be found here:
-[arxiv paper]https://arxiv.org/abs/1807.09190
+[arxiv paper](https://arxiv.org/abs/1807.09190)
 
 The CVPR workshop version of the paper for the DAVIS challenge can be found here:
-[DAVIS paper]https://www.vision.rwth-aachen.de/media/papers/premvos-2018/DAVIS-Semisupervised-Challenge-1st-Team.pdf
+[DAVIS paper](https://www.vision.rwth-aachen.de/media/papers/premvos-2018/DAVIS-Semisupervised-Challenge-1st-Team.pdf)
 
 The ECCV workshop short abstract version of the paper can be found here:
-[YouTube-VOS paper]https://www.vision.rwth-aachen.de/media/papers/premvos-20182/Luiten_eccvw18_premvos_extended_abstract.pdf
+[YouTube-VOS paper](https://www.vision.rwth-aachen.de/media/papers/premvos-20182/Luiten_eccvw18_premvos_extended_abstract.pdf)
 
 ## Setup on which the code was tested
 - python 3.6
