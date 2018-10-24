@@ -1,0 +1,27 @@
+This implementation is based on the FasterRCNN example of tensorpack
+
+Installation instruction
+You need to clone tensorpack: 
+git clone https://github.com/ppwwyyxx/tensorpack /home/${USER}/vision/tensorpack/
+
+To make sure, your tensorpack is compatible, better checkout the commit on which we base this implementation:
+cd /home/${USER}/vision/tensorpack/
+git checkout 6fdde15deac4f23eb31ffef9e8d405d9153a51cd
+
+install some dependencies (using conda install / pip install / ...): 
+termcolor,tqdm,tabulate,opencv-python,msgpack_numpy 
+maybe a few more, maybe scipy, pillow
+pycocotools (you can copy from /home/voigtlaender/vision/coco3, also need to add to PYTHONPATH)
+
+Add tensorpack and pycocotools to your PTHONPATH: 
+export PYTHONPATH=$PYTHONPATH:/home/${USER}/vision/tensorpack/:/home/${USER}/vision/coco3/PythonAPI/
+
+Create a folder on your local disk on which models and logs will be stored and link it here under the name train_log:
+mkdir -p /work/${USER}/data/tensorpack_models/
+ln -s /work/${USER}/data/tensorpack_models/ train_log
+
+Now you should be good to go!
+
+--
+
+The goal of our modifications is to produce class-agnostic proposals
