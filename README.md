@@ -38,23 +38,22 @@ If you use this code, please consider citing the following papers:
 ```
 @inproceedings{luiten2018premvos,
   title={PReMVOS: Proposal-generation, Refinement and Merging for Video Object Segmentation},
-  author={Luiten, Jonathon and Voigtlaender, Paul and Leibe, Bastian},
+  author={Jonathon Luiten and Paul Voigtlaender and Bastian Leibe},
   booktitle={Asian Conference on Computer Vision},
   year={2018}
 }
 
-@article{DAVIS2018-Semi-Supervised-1st,
-   author={Luiten, Jonathon and Voigtlaender, Paul and Leibe, Bastian},
-   title = {PReMVOS: Proposal-generation, Refinement and Merging for the DAVIS Challenge on Video Object Segmentation 2018},
-   journal = {The 2018 DAVIS Challenge on Video Object Segmentation - CVPR Workshops},
-   year = {2018}
+@article{Luiten18CVPRW,
+    author = {Jonathon Luiten and Paul Voigtlaender and Bastian Leibe},
+    title = {{PReMVOS: Proposal-generation, Refinement and Merging for the DAVIS Challenge on Video Object  Segmentation 2018}},
+    journal = {The 2018 DAVIS Challenge on Video Object Segmentation - CVPR Workshops},
+    year = {2018}
 }
-
-@article{youtubevos2018-1st,
-   author={Luiten, Jonathon and Voigtlaender, Paul and Leibe, Bastian},
-   title = {PReMVOS: Proposal-generation, Refinement and Merging for the YouTube-VOS Challenge on Video Object Segmentation 2018},
-   journal = {The 1st Large-scale Video Object Segmentation Challenge - ECCV 2018 Workshops},
-   year = {2018}
+@article{Luiten18ECCVW,
+    author = {Jonathon Luiten and Paul Voigtlaender and Bastian Leibe},
+    title = {{PReMVOS: Proposal-generation, Refinement and Merging for the YouTube-VOS Challenge on Video Object Segmentation 2018}},
+    journal = {The 1st Large-scale Video Object Segmentation Challenge - ECCV Workshops},
+    year = {2018}
 }
 ```
 
