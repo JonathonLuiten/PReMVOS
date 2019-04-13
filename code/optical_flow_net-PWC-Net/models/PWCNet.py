@@ -71,16 +71,17 @@ class PWCDCNet(nn.Module):
         
         nd = (2*md+1)**2
         dd = np.cumsum([128,128,96,64,32])
+        dd = [int(d) for d in dd]
 
         od = nd
         self.conv6_0 = conv(od,      128, kernel_size=3, stride=1)
         self.conv6_1 = conv(od+dd[0],128, kernel_size=3, stride=1)
         self.conv6_2 = conv(od+dd[1],96,  kernel_size=3, stride=1)
         self.conv6_3 = conv(od+dd[2],64,  kernel_size=3, stride=1)
-        self.conv6_4 = conv(od+dd[3],32,  kernel_size=3, stride=1)        
+        self.conv6_4 = conv(od+dd[3],32,  kernel_size=3, stride=1)
         self.predict_flow6 = predict_flow(od+dd[4])
         self.deconv6 = deconv(2, 2, kernel_size=4, stride=2, padding=1) 
-        self.upfeat6 = deconv(od+dd[4], 2, kernel_size=4, stride=2, padding=1) 
+        self.upfeat6 = deconv(od+dd[4], 2, kernel_size=4, stride=2, padding=1)
         
         od = nd+128+4
         self.conv5_0 = conv(od,      128, kernel_size=3, stride=1)

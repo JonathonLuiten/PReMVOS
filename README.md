@@ -18,9 +18,10 @@ The ECCV workshop short abstract version of the paper can be found here:
 ## Setup on which the code was tested
 - python 3.6
 - tensorflow 1.8
-- pytorch 0.2.0_3
+- pytorch 0.2.0_3 (pip install https://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp36-cp36m-manylinux1_x86_64.whl) (this is a version for CUDA 8.0, but I always run this using CUDA 9.0 and it works)
 - CUDA 9.0
 - cudnn 7
+- COCO API for Python 3
 
 
 ## Usage
