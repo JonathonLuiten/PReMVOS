@@ -22,10 +22,16 @@ The ECCV workshop short abstract version of the paper can be found here:
 - CUDA 9.0
 - cudnn 7
 - COCO API for Python 3
+- Or you can simplely test it on a [docker image](https://hub.docker.com/r/mayorx/premvos)
+  - docker version >= 19.03
+  - nvidia-docker would be required.
 
 
 ## Usage
-- To run a simple version of PReMVOS with pre-trained weights already finetuned on the first frame annotations of YouTube-VOS and DAVIS (this version was used to win the ECCV YouTube-VOS challenge), see `simple_run.sh` 
+- To run a simple version of PReMVOS with pre-trained weights already finetuned on the first frame annotations of YouTube-VOS and DAVIS (this version was used to win the ECCV YouTube-VOS challenge), see `simple_run.sh` . By docker:
+    - docker pull mayorx/premvos
+    - docker run -it --gpus all -v \`pwd\`:/tmp/PReMVOS-master/output --rm mayorx/premvos /bin/bash
+    - sh simple_run.sh
 - To test if you have gotten it working, the result numbers should be:
 Mean J: 0.7363.
 Mean F: 0.80044.
